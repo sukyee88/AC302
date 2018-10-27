@@ -25,20 +25,20 @@ function create(){
 	// Create the ledges
 	var ledge = platforms.create(400, 400, 'ground');
 	ledge.body.immovable = true;
-	ledge = platforms.create(-100, 250, 'ground');
+	ledge = platforms.create(-150, 250, 'ground');
 	ledge.body.immovable = true;
 
 	//set text style
 	var style = {font: "bold 32px Arial", fill: "#fff"}
 	//positioning the score
 	scorelabel = game.add.text(300,560, "Score: ", style);
-	//scoretext = game.add.text(420, 560, score,style);
+	scoretext = game.add.text(420, 560, score,style);
 	scorelabel.setShadow(3,3,'rgba(0,0,0,0.5)',2);
 	scoretext.setShadow(3,3,'rgba(0,0,0,0.5)',2);
 
 	//positioning the lives
 	lifelabel = game.add.text(10,5, "Lives: ", style);
-	//lifetext = game.add.text(120,5, life,style);
+	lifetext = game.add.text(120,5, life,style);
 	lifelabel.setShadow(3,3,'rgba(0,0,0,0.5)',2);
 	lifetext.setShadow(3,3,'rgba(0,0,0,0.5)',2);
 }
