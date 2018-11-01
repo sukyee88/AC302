@@ -50,8 +50,8 @@ player.body.collideWorldBounds = true;
 //Enemy settings
 enemy = game.add.sprite(760,20, 'enemy');
 
-enemy.animations.add('left', [0,1],10,true);
-enemy.animations.add('right', [2,3],10,true);
+enemy.animations.add('left', [0,1], 10, true);
+enemy.animations.add('right', [2,3], 10, true);
 game.physics.arcade.enable(enemy);
 enemy.body.bounce.y = 0.2;
 enemy.body.gravity.y = 500;
