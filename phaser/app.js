@@ -31,11 +31,11 @@ ground.body.immovable = true;
 //set text style
 var style = {font: "bold 32px Arial", fill:"#fff"};
 
-scorelabel = game.add.text(x,y, "Score:", style);
-scorenumber = game.add.text(x,y, score, style);
+scorelabel = game.add.text(700, 5, "Score:", style);
+scorenumber = game.add.text(760,5, score, style);
 
 lifelabel = game.add.text(10,5, "Lives:", style);
-lifenumber = game.add.text(x,y, lives, style);
+lifenumber = game.add.text(100,5, lives, style);
 
 //Player settings
 player = game.add.sprite(32,400, 'player');
