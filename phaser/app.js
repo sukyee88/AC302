@@ -22,11 +22,11 @@ ground.scale.setTo(2,2);
 ground.body.immovable = true;
 
 //create platform
-var ledge = platforms.create(0, 250, 'ground');
-ground.body.immovable = true;
+var ledge = platforms.create(400, 400, 'ground');
+ledge.body.immovable = true;
 
-var ledge2 = platforms.create(300, 400, 'ground');
-ground.body.immovable = true;
+var ledge2 = platforms.create(-100, 250, 'ground');
+ledge2.body.immovable = true;
 
 //set text style
 var style = {font: "bold 32px Arial", fill:"#fff"};
