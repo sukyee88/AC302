@@ -103,7 +103,7 @@ function update(){
 
 	moveEnemy();
 
-	if (life <0){
+	if (lives <0){
 		endGame();
 	}
 
