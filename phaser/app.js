@@ -120,7 +120,7 @@ function collectStar(player, star){
 
 	function loseLife(player, enemy){
 		lives -= 1;
-		lifenumber.setText(life);
+		lifenumber.setText(lives);
 		enemy.kill();
 		enemy.reset(10, 20);
 	}
