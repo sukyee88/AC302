@@ -37,7 +37,7 @@ scorenumber = game.add.text(760,5, score, style);
 lifelabel = game.add.text(10,5, "Lives:", style);
 lifenumber = game.add.text(100,5, lives, style);
 
-player = game.add.sprite(32, 400, 'dude');
+player = game.add.sprite(32, 400, 'player');
 		// Animating the player sprite
 		player.animations.add('left',[0, 1, 2, 3],10,true);
 		player.animations.add('right',[5, 6, 7, 8],10,true);
@@ -47,7 +47,7 @@ player = game.add.sprite(32, 400, 'dude');
 		player.body.collideWorldBounds = true;
 
 	// Create the enemy
-  	enemy1 = game.add.sprite(760, 20, 'baddie');
+  	enemy1 = game.add.sprite(760, 20, 'enemy');
     // Animate the enemy1
     	enemy1.animations.add('left', [0,1], 10, true);
     	enemy1.animations.add('right', [2,3], 10, true);
